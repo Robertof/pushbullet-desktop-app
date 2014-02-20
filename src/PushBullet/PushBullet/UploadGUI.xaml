@@ -1,0 +1,13 @@
+﻿<Window x:Class="PushBullet.UploadGUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:PushBullet.Properties"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        Title="{x:Static p:Strings.UploadingWindowTitle}" Height="100" Width="377" ResizeMode="CanMinimize" Icon="/PushBullet;component/Images/pb_small.ico">
+    <Grid>
+        <Label Content="{x:Static p:Strings.Uploading}" Height="28" HorizontalAlignment="Left" Margin="7,10,0,0" Name="uploadLabel" VerticalAlignment="Top" />
+        <Button Content="{x:Static p:Strings.Stop}" Height="23" HorizontalAlignment="Right" Margin="0,10,12,0" Name="undoBtn" VerticalAlignment="Top" Width="Auto" Padding="20,0,20,0" Click="stahp" />
+        <ProgressBar Height="20" HorizontalAlignment="Left" Margin="12,39,0,0" Name="progressBar1" VerticalAlignment="Top" Width="348" />
+    </Grid>
+</Window>

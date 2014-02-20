@@ -1,0 +1,19 @@
+﻿<Window x:Class="PushBullet.APIGUI2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:PushBullet.Properties"
+        Title="{x:Static p:Strings.KeyConfig}" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        ResizeMode="CanMinimize"
+        Icon="/PushBullet;component/Images/pb_small.ico">
+    <Grid>
+        <Label Content="{x:Static p:Strings.PushBulletConf}" Height="44" HorizontalAlignment="Center" Margin="56,-3,56,0" Name="label1" VerticalAlignment="Top" FontWeight="Normal" FontSize="20" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,35,0,0" Name="apikeyInput" VerticalAlignment="Top"  Text="API key..." Width="328" TextAlignment="Center" PreviewMouseUp="onTextboxFocus" />
+        <CheckBox Content="{x:Static p:Strings.ShowCompletionWindow}" Height="16" HorizontalAlignment="Left" Margin="12,64,12,0" Name="doneWindowChkBox" VerticalAlignment="Top" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,5">
+            <Button Content="{x:Static p:Strings.Save}" Height="23" HorizontalAlignment="Left" Margin="0,83,5,0" Name="saveBtn" VerticalAlignment="Top" Width="Auto" Padding="20,0,20,0" IsDefault="True" Click="OnSaveBtnClicked" />
+            <Button Content="{x:Static p:Strings.Undo}" Height="23" HorizontalAlignment="Left" Margin="0,83,0,0" Name="undoBtn" VerticalAlignment="Top" Width="Auto" Padding="20,0,20,0" IsCancel="True" Click="OnUndoBtnClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>
